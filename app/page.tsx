@@ -60,7 +60,7 @@ export default function Home() {
       <div className='container max-w-3xl'>
         <div className='flex items-end'>
           <div className='flex-1'>
-            <h1 className='text-3xl font-bold'>Object Detection</h1>
+            <h1 className='text-3xl font-bold'>KD Detection</h1>
             <h2 className=' text-gray-500'>With Hugging Face transformers</h2>
           </div>
 
@@ -72,7 +72,7 @@ export default function Home() {
               </div>
             ) : (
               <div className='text-end'>
-                <p>Transformer status</p>
+                <p className='text-sm'>Transformer status</p>
                 <Progress value={progress} />
               </div>
             )}
@@ -87,6 +87,10 @@ export default function Home() {
           setResult={setResult}
           className='mt-10 rounded-lg border-2 border-dashed p-20'
         />
+
+        <button className='font absolute right-2 top-2 rounded-sm bg-gray-200 p-2 text-sm'>
+          <a href='https://karasune.vercel.app/'>kendev</a>
+        </button>
       </div>
     </section>
   )

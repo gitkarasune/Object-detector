@@ -84,7 +84,7 @@ export default function Dropzone({
           {isDragActive ? (
             <p>Drop the files here ...</p>
           ) : (
-            <p>Drag & drop files here, or click to select files</p>
+            <p className='text-sm'>Drag & drop files, or click to select files</p>
           )}
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function Dropzone({
 
             <button
               type='button'
-              className='absolute -right-3 -top-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-rose-400 bg-rose-400 text-white transition-colors hover:bg-white hover:text-rose-400'
+              className='absolute -right-3 -top-3 z-10 flex h-7 w-7 items-center justify-center rounded-full border border-rose-400 bg-black text-white transition-colors hover:text-black hover:bg-white'
               onClick={() => remove()}
             >
               <X strokeWidth={1.5} className='h-5 w-5' />
@@ -150,7 +150,7 @@ export default function Dropzone({
                   </div>
                   <button
                     type='button'
-                    className='mt-1 rounded-lg border border-rose-400 px-3 py-1 text-[12px] font-bold uppercase tracking-wider text-gray-500 transition-colors hover:bg-rose-400 hover:text-white'
+                    className='mt-1 rounded-lg border border-black px-3 py-2 text-[12px] font-bold uppercase tracking-wider text-black transition-colors hover:bg-black hover:text-white'
                     onClick={() => remove()}
                   >
                     remove
